@@ -1,7 +1,7 @@
 public class CaesarCipher {
     private static final String ALPHABET = "abcdefghijklmnopqrstuvwxyz" + "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
             "абвгдеёжзийклмнопрстуфхцчшщъыьэюя" + "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ" +
-            "\\n.,\":!? +-*/\\@#$%^&(){}[];'|`~=_©«»—" + "0123456789";
+            "\\r\n.,\":!? +-*/\\@#$%^&(){}[];'|`~=_©«»—" + "0123456789";
 
     public String encrypt(String message, int key) {
         StringBuilder builder = new StringBuilder();
