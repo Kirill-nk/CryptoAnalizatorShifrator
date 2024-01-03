@@ -2,16 +2,16 @@ import java.io.*;
 import java.util.Scanner;
 
 public class Encrypted {
-    public void encrypted() {
-        Scanner scanner = new Scanner(System.in);
+    public void encrypted() throws Exception{
+        BufferedReader scanner = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите путь к файлу с данными для его зашифровки: ");
-        String src = scanner.nextLine();
+        String src = scanner.readLine();
 
         System.out.println("Введите ключ: ");
-        int key = Integer.parseInt(scanner.nextLine());
+        int key = Integer.parseInt(scanner.readLine());
 
         System.out.println("Введите путь куда записать зашифрованный текст: ");
-        String dest = scanner.nextLine();
+        String dest = scanner.readLine();
 
         try (BufferedReader reader = new BufferedReader(new FileReader(src));
         BufferedWriter writer = new BufferedWriter(new FileWriter(dest))) {
@@ -31,6 +31,6 @@ public class Encrypted {
 //Это новый класс = новый файл. 99% совпадает.
 //Подумать как объединить два класса енкриптед и декриптед в один, для того чтобы убрать избыточность
 
-//К 29.12.2023
+//К 04.01.2024
 //1. Найти почему пропадают переносы строк и отсутствует форматирование. Взять 3-5 строк и проверить куда делись переносы строк.
 //2. Подумать как объединить два класса енкриптед и декриптед в один, для того чтобы убрать избыточность. (Задача со звездочкой).

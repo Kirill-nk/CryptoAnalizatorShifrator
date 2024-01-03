@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Menu {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws Exception {
         while (true) {
             BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
             System.out.println("""
