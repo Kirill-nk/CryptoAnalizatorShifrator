@@ -21,6 +21,7 @@ public class Decrypted {
                 String string = reader.readLine();
                 String decrypt = caesar.decrypt(string, key);
                 writer.write(decrypt);
+                writer.newLine();
             }
         } catch (IOException e) {
             throw new RuntimeException(e);

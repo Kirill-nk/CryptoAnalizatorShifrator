@@ -15,8 +15,8 @@ public class Menu {
                     5. Выйти из программы""");
             String answer = input.readLine();
             switch (answer) {
-                case "1" -> new Encrypted().encrypted();
-                case "2" -> new Decrypted().decrypted();
+                case "1" -> new EncryptedDecrypted().encryptedDecrypted(true);
+                case "2" -> new EncryptedDecrypted().encryptedDecrypted(false);
                 case "3" -> System.out.println("3. Подобрать ключ к зашифрованному файлу");
                 case "4" -> System.out.println("4. Расшифровать текст из файла");
                 case "5" -> {

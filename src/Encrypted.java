@@ -20,6 +20,7 @@ public class Encrypted {
                 String string = reader.readLine();
                 String encrypt = caesar.encrypt(string, key);
                 writer.write(encrypt);
+                writer.newLine();
             }
 
         } catch (IOException e) {
