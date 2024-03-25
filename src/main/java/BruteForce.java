@@ -54,7 +54,7 @@ public class BruteForce {
             isValidate = true;
         }
         while (isValidate) {
-            Util.writeMessage(text/*лимитировать для удобочитаемости, то есть написать допусловие вывода*/);
+            Util.writeMessage(text.substring(0, 100));/*лимитировать для удобочитаемости, то есть написать допусловие вывода. количество символов строки квардратный корень длины строки()субстринг от 0 до корень квадратный*/
             Util.writeMessage("Корректно ли расшифрован текст: да/нет?");
             String answer = Util.readString();
             if (answer.equalsIgnoreCase("да")) {
