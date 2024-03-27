@@ -20,6 +20,15 @@ public class CaesarCipher {
     public String decrypt(String message, int key) {
         return encrypt(message, key * -1);
     }
+
+    public int alphabetLength() {
+    return ALPHABET.length();
+    }
+
+
+
 }
+
+
 
 
