@@ -26,8 +26,8 @@ public class Parsing {
             Map<Character, Character> decrypted = new HashMap<>();
             for (int i = 0; i < listEncrypted.size(); i++) {
                 decrypted.put(listEncrypted.get(i).getKey(), listStatistic.get(i).getKey());
-
             }
+
             try (BufferedReader reader = Files.newBufferedReader(Path.of(src));
                  BufferedWriter writer = Files.newBufferedWriter(parsing);
             ) {
